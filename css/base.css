@@ -1,5 +1,69 @@
-/* BASE: colors and fonts the whole team shares.
-   Owner: Part A (Nawenxuan Li)
-   1. Paste the @import line from your style card right below this comment, before any other rule.
-   2. Style body, headings (h1, h2, h3), img, and anything every part uses, like .button.
-   Teammates: ask the Part A owner to add something here. Don't edit this file yourself. */
+/* BASE: fonts and colors shared by all three parts.
+   Owner: Part A (Nawenxuan Li) */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap");
+
+/* Include padding and borders in an element's stated width. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0d0b26;
+  color: #f2f0ff;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 64px;
+  text-align: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Shared content width, with space at the edges on small screens. */
+.container {
+  width: min(1100px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 3px solid #ff3d9a;
+  border-radius: 999px;
+  background: #ff3d9a;
+  color: #f2f0ff;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button-outline {
+  background: transparent;
+  color: #ff3d9a;
+}
+
+.button:hover {
+  background: #f2f0ff;
+  border-color: #f2f0ff;
+  color: #0d0b26;
+}
+
+a:focus-visible {
+  outline: 3px solid #f9f871;
+  outline-offset: 5px;
+}
