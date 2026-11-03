@@ -1,3 +1,46 @@
 /* PART B styles. Owner: Lukas Walker
    Only style the things inside Part B of index.html.
    Put your phone-size rules in a media query at the bottom of this file. */
+   .body {
+      background-color: #1a1745
+   }
+   h1 {
+font-family: "Bebas Neue", sans-serif;
+align-items: center;
+   }
+
+     
+   padding: 2rem 1rem 1.5rem;
+      background-color: var(--color-deep-purple, #1a1745);
+      color: #f2f0ff;
+   }
+   .artist-list {
+      display: flex;
+      flex-direction:column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+
+   .day-name {
+      font-family: "Bebas Neue", sans-serif;
+      font: size 72px;
+      text-transform: uppercase;
+      color: #f2f0ff;
+   }
+
+   ,lineup-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      border-radius: 20px;
+      background-color: #0d0b26;
+   }
+
+   .headliner {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 45px;
+      text-transform: uppercase;
+      color: #f2f0ff;
+   }
