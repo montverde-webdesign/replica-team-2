@@ -1,0 +1,223 @@
+/* PART C styles. Owner: Kian Nurani
+   Only style the things inside Part C of index.html.
+   Put your phone-size rules in a media query at the bottom of this file. */
+
+   /*Section Title*/
+   .tickets-section {
+      padding: 2rem 1rem 1.5rem;
+      background-color: var(--color-deep-purple, #1a1745);
+      color: #f2f0ff;
+   }
+   .tickets-section,
+   .site-footer {
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+   }
+  
+   .tickets-section .section-title {
+      margin: 0 0 1.5rem;
+      color: var(--color-soft-white, #f2f0ff);
+      font-family: var(--font-heading, "Bebas Neue", sans-serif);
+      font-size: 64px;
+      font-weight: 400;
+      line-height: 1;
+      text-align: center;
+      text-transform: uppercase;
+     }
+      
+   /* Tickets Grid */
+   .tickets-grid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Ticket Card */
+   .ticket-card {
+      position: relative;
+      box-sizing: border-box;
+      display: flex;
+      flex: 1 1 0;
+      flex-direction: column;
+      align-items: center;
+      max-width: 300px;
+      min-height: 220px;
+      padding: 1.5rem;
+      border: 1px solid #2c2866;
+      border-radius: 20px;
+      background: #0d0b26;
+      color: #f2f0ff;
+      text-align: center;
+    }
+
+    /* Featured / Weekend Pass Card */
+    .ticket-card.featured {
+      padding-top: 2.5rem;
+      padding-bottom: 1.25rem;
+      border: 1px solid var(--color-neon-pink, #ff3d9a);
+      box-shadow: 0 0 16px #ff3d9a55;
+      min-height: 250px; 
+      padding: 3rem 1.5rem 1.5rem;
+    }
+
+    .ticket-badge {
+      position: absolute;
+      top: 0.65rem;
+      left: 50%;
+      padding: 0.2rem 0.75rem;
+      transform: translateX(-50%);
+      border-radius: 999px;
+      background-color: var(--color-neon-pink, #ff3d9a);
+      color: var(--color-soft-white, #f2f0ff);
+      font-size: 0.7rem;
+      line-height: 1.2;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .ticket-name {
+      margin: 0 0 0.25rem;
+      font-family: var(--font-heading, "Bebas Neue", sans-serif);
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 1.05;
+      text-transform: uppercase;
+    }
+
+    .ticket-price {
+      margin: 0 0 0.75rem;
+      color: var(--color-sun-yellow, #f9f871);
+      font-family: var(--font-heading, "Bebas Neue", sans-serif);
+      font-size: 72px;
+      font-weight: 400;
+      line-height: 0.95;
+    }
+
+    .ticket-features {
+      width: 100%;
+      margin: 0 0 1rem;
+      padding: 0;
+      color: var(--color-lavender, #c9c5f5);
+      font-size: 17px;
+      line-height: 1.5;
+      list-style: none;
+      text-align: center;
+    }
+
+    .ticket-features li {
+      margin-bottom: 0.4rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #c9c5f5;
+    }
+
+    .btn-choose {
+      display: inline-block;
+      margin-top: auto;
+      padding: 0.6rem 1.5rem;
+      border: 1px solid var(--color-neon-pink, #ff3d9a);
+      border-radius: 999px;
+      color: var(--color-soft-white, #f2f0ff);
+      font-size: 17px;
+      text-decoration: none;
+      transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+     .btn-choose.btn-pink {
+      background-color: var(--color-neon-pink, #ff3d9a);
+      color: #f2f0ff;
+     }
+
+     .btn-choose:hover {
+      box-shadow: 0 0 14px #ff3d9a;
+      color: #f2f0ff;
+     }
+
+     .site-footer {
+      padding: 1rem;
+      border-top: 1px solid var(--color-line-purple, #2c2866);
+      background-color: var(--color-night, #0d0b26);
+     }
+
+     .footer-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+     }
+
+     .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--color-soft-white, #f2f0ff);
+      font-family: var(--font-heading, "Bebas Neue", sans-serif);
+      font-size: 20px;
+      text-decoration: none;
+     }
+
+     .footer-logo img {
+      display: block;
+      width: auto;
+      height: 22px;
+     }
+   
+     .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.4rem 1.25rem;
+     }
+
+     .footer-links a {
+      color: var(--color-neon-cyan, #2de2e6);
+      font-size: 12px;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+     }
+
+     .footer-links a:hover {
+      opacity: 0.8;
+      text-shadow: 0 0 10px #2de2e6;
+     }
+
+     .copyright {
+      margin: 0.25rem 0 0;
+      color: var(--color-lavender, #c9c5f5);
+      font-size: 12px;
+      text-align: center;
+     }
+
+     /* Phone size */
+       @media (max-width: 760px) {
+         .tickets-section {
+           padding: 2rem 1rem;
+         }
+         .tickets-grid {
+           flex-direction: column;
+         }
+         .tickets-section .section-title {
+          margin-bottom: 1.5rem;
+          font-size: 48px;
+         }
+         .ticket-card, .ticket-card.featured {
+            flex: none;
+            width: 100%;
+            max-width: 400px;
+         }
+         .footer-links {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 6px 12px;
+         }
+
+         .footer-links a:last-child {
+          flex: 0 0 100%;
+          text-align: center;
+         }
+     
+      }
