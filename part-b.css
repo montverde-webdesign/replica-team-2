@@ -1,90 +1,84 @@
 /* PART B styles. Owner: Lukas Walker
    Only style the things inside Part B of index.html.
    Put your phone-size rules in a media query at the bottom of this file. */
-   .body {
-      background-color: #1a1745;
-      width: 1100px;
-      margin: 0;
-      display: grid;
-   }
-   h1 {
-font-family: "Bebas Neue", sans-serif;
-align-items: center;
-   }
+.body {
+  background-color: #1a1745;
+  width: 1100px;
+  margin: 0;
+  display: grid;
+}
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  align-items: center;
+}
 
-   .day {
-   color: #f9f871;
-   font-size: 14px;
-   font-family: "poppins", sans-serif;
-   text-shadow: 0px 0px 3px #f9f871;
-   text-align: center;
-   flex: 1;
-   margin: 0 0 8px;
-   letter-spacing: 3px;
-   text-transform: uppercase;
-   }
-
-   .artist-list {
-      display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 8px;
-margin: 0;
-padding: 0;
-list-style: none;
-   }
-
-   .headliner {
-     color: #6bc2e6;
-   font-size: 40px;
-   font-family: "bebas neue", sans-serif;
-   text-shadow: 0px 0px 3px #6bc2e6;
-   margin: 0 0 20px;
-   line-height: 1;
-   }
-   
-  .lineup-boxes {
-
-padding: 32px  24px;
-border: 1px solid #2de2e6;
-border-radius: 14px;
-background:#1a1745;
-box-shadow: 0 0 12px #2de2e6;
-flex: 1;
-text-align: center;
-
-  }
-
-  .artist {
-   padding: 4px 12px;
-   border-radius: 999px;
-   background: #2c2866;
-   color: #f2f0ff;
-   font-size: 13px;
-   }
-
-
-
-.lineup-grid {
-   display: flex;
-   gap: 24px;
-   justify-content: center;
+.day {
+  color: #f9f871;
+  font-size: 14px;
+  font-family: "poppins", sans-serif;
+  text-shadow: 0px 0px 3px #f9f871;
+  text-align: center;
+  flex: 1;
+  margin: 0 0 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .artist-list {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 8px;
-   justify-content: center;
-   margin:  0;
-   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.headliner {
+  color: #6bc2e6;
+  font-size: 40px;
+  font-family: "bebas neue", sans-serif;
+  text-shadow: 0px 0px 3px #6bc2e6;
+  margin: 0 0 20px;
+  line-height: 1;
+}
+
+.lineup-boxes {
+  padding: 32px 24px;
+  border: 1px solid #2de2e6;
+  border-radius: 14px;
+  background: #1a1745;
+  box-shadow: 0 0 12px #2de2e6;
+  flex: 1;
+  text-align: center;
+}
+
+.artist {
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: #2c2866;
+  color: #f2f0ff;
+  font-size: 13px;
+}
+
+.lineup-grid {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.artist-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .lineup-note {
-   color: #c9c5f5;
-   font-size: 12px;
-   text-align: center;
-   margin-top: 20px;
-   
+  color: #c9c5f5;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
 }
-
